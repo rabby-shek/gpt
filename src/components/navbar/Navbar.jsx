@@ -1,6 +1,7 @@
 /**
  * navbar component
  * contains brand logo, navbar, login and sign up button
+ * @returns {JSX.Element} => ReactJS Component
  */
 import React, { useState, useEffect } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
