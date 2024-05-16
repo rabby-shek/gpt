@@ -1,3 +1,7 @@
+/**
+ * navbar component
+ * contains brand logo, navbar, login and sign up button
+ */
 import React, { useState, useEffect } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
@@ -6,6 +10,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // handling navbar background color on window scroll
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 100;
@@ -26,6 +31,7 @@ const Navbar = () => {
         <div className="gpt__navbar-links_logo">
           <img src={logo} />
         </div>
+        {/* menu on large screen */}
         <div className="gpt__navbar-links_container">
           <p>
             <a href="#home">Home</a>
@@ -62,6 +68,7 @@ const Navbar = () => {
             onClick={() => setToggleMenu(true)}
           />
         )}
+        {/* menu on small screen */}
         {toggleMenu && (
           <div className="gpt__navbar-menu_container scale-up-center">
             <div className="gpt__navbar-menu_container-links">
