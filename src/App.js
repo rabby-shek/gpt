@@ -1,5 +1,10 @@
+/**
+ * app component
+ * contains the total architecture of the application
+ * @returns {jsx.element} => A ReactJS Component
+ */
 import React from "react";
-import './app.css';
+import "./app.css";
 import {
   Footer,
   Blog,
