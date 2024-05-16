@@ -1,11 +1,11 @@
 import React from 'react'
 
-const App = () => {
+const Feature = () => {
   return (
     <div>
-      app
+      feature
     </div>
   )
 }
 
-export default App
+export default Feature
