@@ -4,6 +4,7 @@
     align-items: center;
     padding: 2rem 6rem;
     position: fixed;
+    width: 100%;
 }
 
 .gpt__navbar-links {
